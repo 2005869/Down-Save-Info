@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.os.Bundle;
 
+import java.util.jar.Attributes;
+
 public class MainActivity extends AppCompatActivity {
 
     // Receive an input for the user
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         Intent myIntent = new Intent(this, Screen2.class);
 
         //use method putExtra to send the message
-        myIntent.putExtra(name="sentMessage", message);
+        myIntent.putExtra("sentMessage", message);
 
         //open next screen
         startActivity(myIntent);
